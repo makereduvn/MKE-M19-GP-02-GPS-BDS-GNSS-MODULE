@@ -68,7 +68,7 @@ Sản phẩm hỗ trợ **ăng-ten GPS chủ động (Active GPS Antenna)** thô
 ## Một số lưu ý khi sử dụng
 ### Về Antenna
 Module **không thể hoạt động đúng nếu chưa kết nối anten GPS**.
-MKE-M19 sử dụng **Active GPS Antenna** kết nối thông qua đầu nối **SMA-K (Female)**. Anten có nhiệm vụ thu tín hiệu từ các vệ tinh định vị hoạt động tại băng tần **L1 - 1575.42MHz**.
+MKE-M19 sử dụng **Active GPS Antenna** kết nối thông qua đầu nối **SMA-K (Female)**.
 > ⚠️ Không nên thử nghiệm module khi chưa gắn anten vì khả năng thu tín hiệu sẽ rất kém hoặc không thể xác định được vị trí.
 Để đạt hiệu quả thu tín hiệu tốt nhất:
 - Sử dụng anten GPS Active chất lượng tốt.
