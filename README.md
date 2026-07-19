@@ -103,7 +103,38 @@ Nhờ đó module có thể xác định vị trí nhanh hơn khi cấp nguồn 
 ## Sơ đồ chân (Pinout)
 | Chân | Loại | Chức năng | Mô tả |
 |------|------|-----------|-------|
-| **5V** | Power | Power Supply | Nguồn cấp 5VDC cho mạch. |
 | **GND** | Power | Ground | Chân Mass (0V). |
+| **5V** | Power | Power Supply | Nguồn cấp 5VDC cho mạch. |
 | **TX** | Output | UART TX | Chân truyền dữ liệu UART từ module GPS tới vi điều khiển. |
 | **RX** | Input | UART RX | Chân nhận dữ liệu UART từ vi điều khiển để cấu hình module. |
+
+## Hướng dẫn sử dụng
+### Hướng dẫn kết nối
+- Cấp nguồn 5VDC cho mạch qua hai chân GND và 5V.
+- kết nối chân TX và RX của Module với chân điều khiển được khai báo trong chương trình.
+
+### Hướng dẫn sử dụng với Arduino Uno / Vietduino Uno / ESP32
+- Trong **Tools / Library Manager**, tìm và cài đặt bộ thư viện tổng hợp **"MKE_ONE" by MakerEdu.vn**
+- Mở chương trình mẫu tại **File / Examples / MKE_ONE / Module / M19_GPS_GP02**
+- Cấu hình board mạch tương ứng là **Arduino Uno / ESP32**, chọn đúng cổng **COM Port** của mạch và nhấn **Upload** để nạp chương trình.
+- Cấp nguồn 5VDC cho mạch, kết nối chân TX và RX của Module với chân điều khiển được khai báo trong chương trình.
+- Xem kết quả mạch hoạt động theo chương trình đã nạp.
+
+### Hướng dẫn lập trình với Micro:bit (kéo thả khối)
+
+- Khởi động [Microsoft MakeCode](https://makecode.microbit.org/) và **Import** chương trình theo đường link sau: `https://github.com/makereduvn/mke_m19_gps_gp02_microbit/`
+- Kết nối mạch Micro:bit và **Download** chương trình.
+- Cấp nguồn 5VDC cho mạch, kết nối chân TX và RX của Module với chân điều khiển được khai báo trong chương trình.
+- Xem kết quả mạch hoạt động theo chương trình đã nạp.
+
+Nếu bắt đầu tự án mới cần cài đặt Extension **MKE_ONE_MICROBIT** trên [Microsoft MakeCode](https://makecode.microbit.org/) theo [hướng dẫn tại đây](https://github.com/makereduvn/MKE_ONE_MICROBIT). Sau khi cài đặt thành công, các khối lệnh của Extension **MKE_ONE_MICROBIT** sẽ xuất hiện trong danh sách block và sẵn sàng để sử dụng.
+
+## Kích thước sản phẩm
+![MKE-M19 GPS GP-02](/extras/MKE-M19_1.jpg)
+
+## Hình ảnh sản phẩm
+![MKE-M19 GPS GP-02](/extras/MKE-M19_2.png)
+![MKE-M19 GPS GP-02](/extras/MKE-M19_3.png)
+
+## Miễn trừ trách nhiệm
+Sản phẩm này là bo mạch phát triển được thiết kế phục vụ cho mục đích nghiên cứu, thử nghiệm và học tập, không phải là một thiết bị hoàn chỉnh. Trong trường hợp người dùng kết hợp mạch này với các linh kiện, thiết bị hoặc phần mềm khác để tạo thành một hệ thống hoặc sản phẩm hoàn chỉnh, mọi chức năng và tính phù hợp của sản phẩm sau cùng đều thuộc trách nhiệm của người dùng.
